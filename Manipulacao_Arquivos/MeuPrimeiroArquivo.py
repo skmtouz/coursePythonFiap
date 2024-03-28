@@ -1,6 +1,4 @@
-arquivo = open("primeiro_arquivo.txt", "w")
-
-arquivo.write("Meu primeiro arquivo!")
-with arquivo as arquivo:
-    arquivo.write("\nPikachu!!")
-
+with open("primeiro_arquivo.txt", "r") as arquivo:
+    conteudo = arquivo.readline()
+    for linha in arquivo.readlines():
+        print(linha)
